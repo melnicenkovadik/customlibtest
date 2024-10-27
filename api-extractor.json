@@ -5,6 +5,12 @@
     "enabled": true,
     "untrimmedFilePath": "./dist/my-component-library.d.ts"
   },
+  "apiReport": {
+    "enabled": false
+  },
+  "docModel": {
+    "enabled": false
+  },
   "compiler": {
     "skipLibCheck": true
   },
