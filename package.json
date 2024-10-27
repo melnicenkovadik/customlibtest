@@ -24,8 +24,9 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "build:storybook": "storybook build -o storybook-static",
     "build:package": "npm run build && npm run tailwind -- -o ./dist/index.css",
+    "api-extractor": "api-extractor run --local",
+    "build:storybook": "storybook build -o storybook-static",
     "storybook": "storybook dev -p 6006",
     "tailwind": "tailwindcss -i ./src/index.css",
     "prettier:lint": "prettier . --write",
