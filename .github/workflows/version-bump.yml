@@ -36,6 +36,6 @@ jobs:
       - name: Push changes
         run: |
           git add -f package.json package-lock.json dist/my-component-library.d.ts
-         git commit -m "chore: bump version"
+          git commit -m "chore: bump version"
           git push origin main --force
 
