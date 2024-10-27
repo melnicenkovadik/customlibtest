@@ -34,8 +34,12 @@ jobs:
           npm run api-extractor # Выполняем api-extractor для генерации объединённого файла .d.ts
 
       - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
+          git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/melnicenkovadik/customlibtest.git
           git add -f package.json package-lock.json dist/my-component-library.d.ts
           git commit -m "chore: bump version"
           git push origin main --force
+    
 
