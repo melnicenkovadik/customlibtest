@@ -1,0 +1,87 @@
+{
+  "root": true,
+  "extends": [
+    "sonarqube",
+    "plugin:sonarjs/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+    // TODO, add Next.js config to storybook, and uncomment below
+    // "next/core-web-vitals"
+    // "plugin:@next/next/recommended"
+  ],
+  "plugins": ["sonarjs", "@typescript-eslint", "react-refresh"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaversion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "globals": {
+    "globalThis": true
+  },
+  "rules": {
+    "react/display-name": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-boolean-value": "off",
+    "testing-library/render-result-naming-convention": "off",
+    "testing-library/no-debugging-utils": "off",
+    "camelcase": "off",
+    "react/react-in-jsx-scope": "off",
+    "require-await": "off",
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": ["jsx", "global"]
+      }
+    ],
+    "sonarjs/no-duplicate-string": ["error", { "threshold": 8 }],
+    "jsx-a11y/no-static-element-interactions": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "off",
+        "sonarjs/no-duplicate-string": "off"
+      }
+    },
+    {
+      "files": ["**/*.stories.tsx"],
+      "rules": {
+        "react-hooks/rules-of-hooks": "off",
+        "no-console": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "react/no-children-prop": "off"
+      }
+    },
+    {
+      "files": ["**/*.e2e.ts"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "testing-library/prefer-screen-queries": "off",
+        "no-await-in-loop": "off",
+        "testing-library/no-await-sync-queries": "off"
+      }
+    }
+  ],
+  "ignorePatterns": ["!.storybook"]
+}

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Geist-Regular"),
+    url("./static/fonts/Geist-Regular.woff2") format("woff2"),
+    url("./static/fonts/Geist-Regular.woff") format("woff"),
+    url("./static/fonts/Geist-Regular.ttf") format("truetype");
+}
+
+:root {
+  --font-geist-sans: 'Geist';
+}
