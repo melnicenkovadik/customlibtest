@@ -1,6 +1,6 @@
 {
-  "name": "my-component-library",
-  "version": "1.0.0",
+  "name": "@melnicenkovadik/my-component-library",
+  "version": "1.0.1",
   "description": "A reusable component library for React",
   "type": "module",
   "private": false,
@@ -8,23 +8,25 @@
   "author": "Vadym Melnicenko <melnicenkovadik@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/melnicenkovadik/my-component-library"
+    "url": "https://github.com/melnicenkovadik/customlibtest"
   },
   "files": [
     "dist"
   ],
-  "main": "dist/my-component-library.cjs.js",
-  "module": "dist/my-component-library.esm.js",
-  "types": "dist/index.d.ts",
+  "module": "dist/my-component-library.js",
+  "types": "dist/my-component-library.d.ts",
   "exports": {
-    ".": "./dist/my-component-library.esm.js",
+    ".": "./dist/my-component-library.js",
     "./index.css": "./dist/index.css",
+    "./dist/index.css": "./dist/index.css",
     "./tailwind.preset.js": "./dist/tailwind.preset.js",
-    "./styles.css": "./dist/styles.css"
+    "./dist/tailwind.preset.js": "./dist/tailwind.preset.js",
+    "./styles.css": "./dist/styles.css",
+    "./dist/styles.css": "./dist/styles.css"
   },
   "scripts": {
     "build": "tsc && vite build",
-    "build:storybook": "storybook build",
+    "build:storybook": "storybook build -o storybook-static",
     "build:package": "npm run build && npm run tailwind -- -o ./dist/index.css",
     "storybook": "storybook dev -p 6006",
     "tailwind": "tailwindcss -i ./src/index.css",
