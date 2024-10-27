@@ -32,4 +32,5 @@ jobs:
         run: |
           git add package.json package-lock.json
           git commit -m "chore: bump version"
-          git push origin main
+          git push origin main --force
+

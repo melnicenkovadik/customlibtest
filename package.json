@@ -18,9 +18,7 @@
   "exports": {
     ".": "./dist/my-component-library.js",
     "./index.css": "./dist/index.css",
-    "./dist/index.css": "./dist/index.css",
     "./tailwind.preset.js": "./dist/tailwind.preset.js",
-    "./dist/tailwind.preset.js": "./dist/tailwind.preset.js",
     "./styles.css": "./dist/styles.css",
     "./dist/styles.css": "./dist/styles.css"
   },
