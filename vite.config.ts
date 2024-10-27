@@ -32,8 +32,10 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    dts({ rollupTypes: true }),
-    // Убери viteStaticCopy, если нет нужды в копировании статических файлов
+    dts({
+      rollupTypes: true,
+      entryRoot: 'src',
+    }),
     viteStaticCopy({
       targets: [
         {
