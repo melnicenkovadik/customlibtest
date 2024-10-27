@@ -20,7 +20,7 @@ export const Playground: Story = {
   parameters: {
     author: AUTHORS['vadym.melnicenko'],
     embedDesigns: [
-      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412'
+      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
     ],
     embedOrientation: 'vertical',
     designs: [
@@ -114,7 +114,7 @@ export const Destructive: Story = {
   parameters: {
     author: AUTHORS['vadym.melnicenko'],
     embedDesigns: [
-      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412'
+      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
     ],
     embedOrientation: 'vertical',
     designs: [
@@ -146,7 +146,7 @@ export const Base: Story = {
   parameters: {
     author: AUTHORS['vadym.melnicenko'],
     embedDesigns: [
-      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412'
+      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
     ],
     embedOrientation: 'vertical',
     designs: [
@@ -174,7 +174,7 @@ export const WithAvatar: Story = {
   parameters: {
     author: AUTHORS['vadym.melnicenko'],
     embedDesigns: [
-      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412'
+      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
     ],
     embedOrientation: 'vertical',
     designs: [

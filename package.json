@@ -23,14 +23,12 @@
     "./styles.css": "./dist/styles.css"
   },
   "scripts": {
-    "build": "tsc -b && vite build",
+    "build": "tsc && vite build",
     "build:storybook": "storybook build",
     "build:package": "npm run build && npm run tailwind -- -o ./dist/index.css",
     "storybook": "storybook dev -p 6006",
     "tailwind": "tailwindcss -i ./src/index.css",
-    "preview": "vite preview",
     "prettier:lint": "prettier . --write",
-    "eslint:lint": "eslint .",
     "lint:fix": "node ./scripts/lint.mjs --color --fix",
     "lint:ci": "node ./scripts/lint.mjs --color"
   },

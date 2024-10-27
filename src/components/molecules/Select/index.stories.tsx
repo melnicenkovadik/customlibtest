@@ -30,7 +30,7 @@ export const Playground: Story = {
   parameters: {
     author: AUTHORS['vadym.melnicenko'],
     embedDesigns: [
-      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412'
+      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
     ],
     designs: [''],
   },
@@ -135,8 +135,8 @@ export const SelectWithLabel: Story = {
     author: AUTHORS['vadym.melnicenko'],
     designs: [
       'https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412' +
-      'KRK/%F0%9F%8E%AF-Design-System---Atoms%2C-Molecu' +
-      'les%2C-Org.-CustomHubUI?node-id=1723-500937&m=dev',
+        'KRK/%F0%9F%8E%AF-Design-System---Atoms%2C-Molecu' +
+        'les%2C-Org.-CustomHubUI?node-id=1723-500937&m=dev',
     ],
   },
   argTypes: {

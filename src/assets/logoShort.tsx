@@ -16,25 +16,33 @@ export const LogoShort = ({ className }: LogoMainProps) => {
         <path
           d="M5 5 Q5 35 20 35 Q35 35 35 5"
           stroke="rgb(var(--ui-accent-500))"
-          stroke-linecap="round"
+          strokeLinecap="round"
           fill="none"
-          stroke-width="3"
+          strokeWidth="3"
         />
         <path
           d="M25 15 L25 35"
           stroke="var(--secondary-logo)"
-          stroke-linecap="round"
+          strokeLinecap="round"
           fill="none"
-          stroke-width="3"
+          strokeWidth="3"
         />
-        <circle cx="25" cy="8" r="3" fill="var(--secondary-logo)" />
+        <circle
+          cx="25"
+          cy="8"
+          r="3"
+          fill="var(--secondary-logo)"
+        />
       </g>
       <defs>
         <clipPath id="clip0">
-          <rect width="40" height="40" fill="white" />
+          <rect
+            width="40"
+            height="40"
+            fill="white"
+          />
         </clipPath>
       </defs>
     </svg>
-
   );
 };

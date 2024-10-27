@@ -50,7 +50,7 @@ body {
   --background-rgb: 255, 255, 255;
   --foreground-rgb: 10, 10, 10;
   --card-secondary-text: #404040;
-  --card-opacity-background: rgba(255, 255, 255, 0.60);
+  --card-opacity-background: rgba(255, 255, 255, 0.6);
 }
 
 .dark {
@@ -99,8 +99,8 @@ body {
 
   --background-rgb: 10, 10, 10;
   --foreground-rgb: 255, 255, 255;
-  --card-secondary-text: #D4D4D4;
-  --card-opacity-background: rgba(23, 23, 23, 0.60);
+  --card-secondary-text: #d4d4d4;
+  --card-opacity-background: rgba(23, 23, 23, 0.6);
 }
 
 .bg-gd-s {

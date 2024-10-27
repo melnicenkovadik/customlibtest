@@ -79,7 +79,8 @@ export const Playground: Story = {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [selectedMode, setSelectedMode] = useState<ModeCodeType>('auto');
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [selectedAccent, setSelectedAccent] = useState<string>('accent-green');
+    const [selectedAccent, setSelectedAccent] =
+      useState<string>('accent-green');
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [isOpen, setIsOpen] = useState<boolean>(false);
     return (

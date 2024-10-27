@@ -63,9 +63,7 @@ export const Playground: Story = {
       </div>
     );
     const contentCollapsed = (
-      <div className={cn(contentClass, 'w-[100px]')}>
-        ICON
-      </div>
+      <div className={cn(contentClass, 'w-[100px]')}>ICON</div>
     );
     return (
       <TooltipProvider delayDuration={TOOLTIP_DELAY_DURATION}>

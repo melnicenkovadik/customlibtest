@@ -31,7 +31,7 @@ export const Playground: Story = {
   parameters: {
     author: AUTHORS['vadym.melnicenko'],
     embedDesigns: [
-      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412'
+      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
     ],
     designs: [
       'https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
@@ -97,7 +97,7 @@ export const DaapCarousel: Story = {
   parameters: {
     author: AUTHORS['vadym.melnicenko'],
     designs: [
-      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412'
+      'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/AczaSV5JD1751SAWcZshOp/Flamingo-Design-System-(Community)?node-id=53-412',
     ],
   },
   args: {
@@ -111,7 +111,7 @@ export const DaapCarousel: Story = {
         {items.map((_item, index) => (
           <CarouselItem
             key={index}
-            className="w-full flex justify-center items-center"
+            className="flex w-full items-center justify-center"
           >
             <ExpandableImage
               className="h-60 w-60"
