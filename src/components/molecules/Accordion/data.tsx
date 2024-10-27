@@ -30,10 +30,24 @@ export const accordionData: AccordionItemTypes[] = [
     ),
   },
   {
-    id: 302,
+    id: 303,
     name: 'Name 3',
     description: 'Description 3',
     value: 'item-3',
+    content: (
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </div>
+    ),
+  },
+  {
+    id: 304,
+    name: 'Name 4',
+    description: 'Description 4',
+    value: 'item-4',
     content: (
       <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod

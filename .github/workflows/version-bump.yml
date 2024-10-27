@@ -35,11 +35,15 @@ jobs:
 
       - name: Push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/melnicenkovadik/customlibtest.git
           git add -f package.json package-lock.json dist/my-component-library.d.ts
-          git commit -m "chore: bump version"
-          git push origin main --force
-    
-
+          
+          # Проверка наличия изменений перед коммитом
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: bump version"
+            git push origin main --force
+          else
+            echo "No changes to commit."
+          fi
