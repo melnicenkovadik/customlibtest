@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Получаем полный репозиторий для корректной работы с тегами
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -26,7 +28,14 @@ jobs:
           git config --global user.email "melnicenkovadik@gmail.com" # Твой email
 
       - name: Bump version
-        run: npm version patch # Увеличиваем версию пакета
+        id: bump_version
+        run: |
+          current_version=$(node -p "require('./package.json').version")
+          echo "Current version: $current_version"
+          npm version patch -m "chore: bump version to %s" # Увеличиваем версию пакета
+          new_version=$(node -p "require('./package.json').version")
+          echo "New version: $new_version"
+          echo "new_version=$new_version" >> $GITHUB_ENV
 
       - name: Build and extract types
         run: |
@@ -42,8 +51,10 @@ jobs:
           
           # Проверка наличия изменений перед коммитом
           if ! git diff --cached --quiet; then
-            git commit -m "chore: bump version"
+            git commit -m "chore: bump version to ${{ env.new_version }}"
+            git tag -a "v${{ env.new_version }}" -m "Release version ${{ env.new_version }}"
             git push origin main --force
+            git push origin "v${{ env.new_version }}" --force  # Пушим также новый тег
           else
             echo "No changes to commit."
           fi
