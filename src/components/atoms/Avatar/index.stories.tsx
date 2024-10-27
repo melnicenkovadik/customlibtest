@@ -30,7 +30,7 @@ export const Playground: Story = {
   },
   argTypes: {
     avatarComponent: {
-      options: ['default', 'secondary', 'success'],
+      options: ['default', 'success', 'secondary'],
       control: false,
     },
     src: {
