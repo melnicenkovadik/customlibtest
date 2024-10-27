@@ -15,20 +15,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: '18' # Устанавливаем Node.js версии 18
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps # Устанавливаем зависимости
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "melnicenkovadik" # Твоё имя
+          git config --global user.email "melnicenkovadik@gmail.com" # Твой email
 
       - name: Bump version
-        run: |
-          npm version patch
-          git push origin main
+        run: npm version patch # Увеличиваем версию пакета
 
       - name: Push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add package.json package-lock.json
           git commit -m "chore: bump version"
           git push origin main
