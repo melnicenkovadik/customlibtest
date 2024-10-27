@@ -28,9 +28,13 @@ jobs:
       - name: Bump version
         run: npm version patch # Увеличиваем версию пакета
 
+      - name: Build and extract types
+        run: |
+          npm run build
+          npm run api-extractor # Выполняем api-extractor для генерации объединённого файла .d.ts
+
       - name: Push changes
         run: |
-          git add package.json package-lock.json
+          git add package.json package-lock.json dist/my-component-library.d.ts
           git commit -m "chore: bump version"
           git push origin main --force
-
