@@ -36,6 +36,7 @@ jobs:
           new_version=$(node -p "require('./package.json').version")
           echo "New version: $new_version"
           echo "new_version=$new_version" >> $GITHUB_ENV
+          git status  # Проверка статуса после изменения
 
       - name: Build and extract types
         run: |
@@ -47,14 +48,14 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/melnicenkovadik/customlibtest.git
-          git add -f package.json package-lock.json dist/my-component-library.d.ts
+          git add package.json package-lock.json dist/my-component-library.d.ts
           
           # Проверка наличия изменений перед коммитом
           if ! git diff --cached --quiet; then
             git commit -m "chore: bump version to ${{ env.new_version }}"
             git tag -a "v${{ env.new_version }}" -m "Release version ${{ env.new_version }}"
-            git push origin main --force
-            git push origin "v${{ env.new_version }}" --force  # Пушим также новый тег
+            git push origin main
+            git push origin "v${{ env.new_version }}"  # Пушим также новый тег
           else
             echo "No changes to commit."
           fi
