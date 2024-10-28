@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Обновлено до версии 3
         with:
           fetch-depth: 0  # Получаем полный репозиторий для корректной работы с тегами
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  # Обновлено до версии 3
         with:
-          node-version: '18' # Устанавливаем Node.js версии 18
+          node-version: '18'  # Устанавливаем Node.js версии 18
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps # Устанавливаем зависимости
@@ -59,4 +59,3 @@ jobs:
           else
             echo "No changes to commit."
           fi
- 
