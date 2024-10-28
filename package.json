@@ -10,6 +10,7 @@
     "type": "git",
     "url": "https://github.com/melnicenkovadik/customlibtest"
   },
+  "sideEffects": false,
   "files": [
     "dist"
   ],
@@ -17,15 +18,19 @@
   "types": "dist/my-component-library.d.ts",
   "exports": {
     ".": "./dist/my-component-library.js",
-    "./index.css": "./dist/index.css",
-    "./tailwind.preset.js": "./dist/tailwind.preset.js",
-    "./styles.css": "./dist/styles.css",
-    "./dist/styles.css": "./dist/styles.css"
+    "./styles": "./dist/index.css",
+    "./tailwind.preset": {
+      "import": "./dist/tailwind.preset.js",
+      "require": "./dist/tailwind.preset.js",
+      "types": "./dist/tailwind.preset.d.ts"
+    }
   },
   "scripts": {
     "build": "tsc && vite build",
     "build:package": "npm run build && npm run tailwind -- -o ./dist/index.css",
+    "build:package:claer": "rm -rf dist && npm run build:package",
     "api-extractor": "api-extractor run --local",
+    "link": "npm link",
     "build:storybook": "storybook build -o storybook-static",
     "storybook": "storybook dev -p 6006",
     "tailwind": "tailwindcss -i ./src/index.css",
