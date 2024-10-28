@@ -3,7 +3,7 @@ const prettierSortConfig = {
     '^react',
     '^@radix-ui',
     '<THIRD_PARTY_MODULES>',
-    '',
+    '@melnicenkovadik',
     '^lib',
     '^[./]',
   ],

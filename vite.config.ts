@@ -12,9 +12,15 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, './src/components/index.ts'),
-      name: 'MyComponentLibrary', // Имя библиотеки
+      entry: path.resolve(__dirname, './src/components/index.ts'), // Путь к файлу index.ts
+      name: 'my-component-library', // Имя библиотеки
       fileName: 'my-component-library', // Имя файла
+      // fileName: (format, name) => {
+      //   if (format === 'es') {
+      //     return name + '.js';
+      //   }
+      //   return name + '.' + format;
+      // },
       formats: ['es'],
     },
     rollupOptions: {
@@ -47,7 +53,7 @@ export default defineConfig({
           dest: '.',
         },
         {
-          src: './src/shared/styles.css',
+          src: './src/index.css',
           dest: '.',
         },
       ],
