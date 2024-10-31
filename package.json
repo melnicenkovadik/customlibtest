@@ -1,6 +1,6 @@
 {
   "name": "@melnicenkovadik/my-component-library",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A reusable component library for React",
   "type": "module",
   "private": false,
