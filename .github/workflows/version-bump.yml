@@ -27,13 +27,19 @@ jobs:
         run: npm pkg fix
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build package
-        run: npm run build:package --legacy-peer-deps
+        run: npm run build:package
 
       - name: Publish to GitHub Packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           npm publish
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm publish --access public
