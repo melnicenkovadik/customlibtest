@@ -4,6 +4,7 @@
   "description": "A reusable component library for React",
   "type": "module",
   "private": false,
+  "main": "dist/my-component-library.js",
   "license": "MIT",
   "author": "Vadym Melnicenko <melnicenkovadik@gmail.com>",
   "repository": {
