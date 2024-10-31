@@ -10,6 +10,7 @@ import './main.css';
 const preview: Preview = {
   parameters: {
     docs: {
+      // @ts-ignore
       container: (props: any) => ((<DocumentationContainer {...props} />)),
     },
     badgesConfig: {
