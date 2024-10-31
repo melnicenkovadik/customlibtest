@@ -37,3 +37,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           npm publish
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm publish --access public
