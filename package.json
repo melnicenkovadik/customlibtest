@@ -37,7 +37,8 @@
     "tailwind": "tailwindcss -i ./src/index.css",
     "prettier:lint": "prettier . --write",
     "lint:fix": "node ./scripts/lint.mjs --color --fix",
-    "lint:ci": "node ./scripts/lint.mjs --color"
+    "lint:ci": "node ./scripts/lint.mjs --color",
+    "update-with-parent": "./scripts/update-with-parent-branch.sh"
   },
   "dependencies": {
     "react": "^18",
