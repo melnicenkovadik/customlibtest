@@ -1,25 +1,36 @@
 #!/bin/bash
 
-# Получаем имя текущей ветки
-current_branch=$(git rev-parse --abbrev-ref HEAD)
+# Определяем родительскую ветку, например, 'main'
+PARENT_BRANCH="main"
 
-# Указываем родительскую ветку, из которой будем делать pull и merge
-parent_branch="main"  # замените на нужную родительскую ветку, если нужно
+# Получаем текущую ветку
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
-# Обновляем локальную копию родительской ветки
-git fetch origin "$parent_branch"
+# Проверяем, находимся ли мы не на родительской ветке
+if [ "$CURRENT_BRANCH" = "$PARENT_BRANCH" ]; then
+  echo "Вы находитесь на родительской ветке '$PARENT_BRANCH'. Этот скрипт нужно запускать с других веток."
+  exit 1
+fi
 
-# Делаем pull из родительской ветки
-git pull origin "$parent_branch"
+# Обновляем родительскую ветку из удалённого репозитория
+echo "Обновляем родительскую ветку '$PARENT_BRANCH'..."
+git fetch origin
+git checkout $PARENT_BRANCH
+git pull origin $PARENT_BRANCH
 
-# Мерджим изменения в текущую ветку
-git merge "$parent_branch" --no-edit
+# Возвращаемся на текущую ветку и мержим изменения из родительской ветки
+echo "Возвращаемся на ветку '$CURRENT_BRANCH' и мержим изменения из '$PARENT_BRANCH'..."
+git checkout $CURRENT_BRANCH
+git merge $PARENT_BRANCH --no-edit
 
 # Проверяем, были ли изменения после мерджа
 if [ "$(git status --porcelain)" ]; then
   # Если изменения есть, пушим их в текущую ветку
-  git push origin "$current_branch"
-  echo "Changes have been pushed to $current_branch."
+  echo "Пушим изменения в ветку '$CURRENT_BRANCH'..."
+  git push origin "$CURRENT_BRANCH"
+  echo "Изменения были успешно запушены в ветку '$CURRENT_BRANCH'."
 else
-  echo "No changes to push."
+  echo "Нет изменений для пуша."
 fi
+
+echo "Мерж завершен!"
