@@ -1,10 +1,3 @@
-name: Bump version and publish
-
-on:
-  push:
-    branches:
-      - main
-
 jobs:
   bump-version:
     runs-on: ubuntu-latest
@@ -15,7 +8,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Встановлюємо Node.js версії 20
+          node-version: '20'
 
       - name: Configure Git
         run: |
@@ -32,6 +25,12 @@ jobs:
 
       - name: Fix npm package warnings
         run: npm pkg fix
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build package
+        run: npm run build:package --legacy-peer-deps
 
       - name: Publish to GitHub Packages
         env:
