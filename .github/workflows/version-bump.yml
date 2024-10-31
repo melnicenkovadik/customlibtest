@@ -39,14 +39,17 @@ jobs:
       - name: Build package
         run: npm run build:package
 
-      - name: Configure .npmrc for npmjs.org
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: Configure .npmrc for GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
 
       - name: Publish to GitHub Packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           npm publish --registry=https://npm.pkg.github.com
+
+      - name: Configure .npmrc for npmjs.org
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Publish to npm
         env:
