@@ -39,6 +39,12 @@ jobs:
       - name: Build package
         run: npm run build:package
 
+      - name: Configure .npmrc for GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
+
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Publish to GitHub Packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
