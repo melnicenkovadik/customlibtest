@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'  # Встановлюємо Node.js версії 20
 
       - name: Configure Git
         run: |
@@ -29,6 +29,9 @@ jobs:
           npm version patch -m "chore: bump version to %s"
           git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/melnicenkovadik/customlibtest.git
           git push -f origin main --follow-tags
+
+      - name: Fix npm package warnings
+        run: npm pkg fix
 
       - name: Publish to GitHub Packages
         env:
