@@ -5,9 +5,6 @@
     "plugin:sonarjs/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
-    // TODO, add Next.js config to storybook, and uncomment below
-    // "next/core-web-vitals"
-    // "plugin:@next/next/recommended"
   ],
   "plugins": ["sonarjs", "@typescript-eslint", "react-refresh"],
   "parser": "@typescript-eslint/parser",
