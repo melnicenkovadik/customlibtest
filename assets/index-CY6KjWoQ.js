@@ -1,0 +1,1 @@
+import{r as u,a as s}from"./index-DRjF_FHU.js";import{u as e}from"./index-CpgLm8gy.js";var f=s.useId||(()=>{}),c=0;function d(t){const[a,r]=u.useState(f());return e(()=>{t||r(o=>o??String(c++))},[t]),t||(a?`radix-${a}`:"")}export{d as u};
