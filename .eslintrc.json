@@ -54,29 +54,12 @@
   },
   "overrides": [
     {
-      "files": ["**/*.test.ts"],
-      "rules": {
-        "@typescript-eslint/ban-ts-comment": "off",
-        "sonarjs/no-duplicate-string": "off"
-      }
-    },
-    {
       "files": ["**/*.stories.tsx"],
       "rules": {
         "react-hooks/rules-of-hooks": "off",
         "no-console": "off",
         "sonarjs/no-duplicate-string": "off",
         "react/no-children-prop": "off"
-      }
-    },
-    {
-      "files": ["**/*.e2e.ts"],
-      "rules": {
-        "@typescript-eslint/ban-ts-comment": "off",
-        "sonarjs/no-duplicate-string": "off",
-        "testing-library/prefer-screen-queries": "off",
-        "no-await-in-loop": "off",
-        "testing-library/no-await-sync-queries": "off"
       }
     }
   ],

@@ -22,8 +22,7 @@
     "./styles": "./dist/index.css",
     "./tailwind.preset": {
       "import": "./dist/tailwind.preset.js",
-      "require": "./dist/tailwind.preset.js",
-      "types": "./dist/tailwind.preset.d.ts"
+      "require": "./dist/tailwind.preset.js"
     }
   },
   "scripts": {

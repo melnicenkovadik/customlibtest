@@ -5,20 +5,18 @@ import { titleVariants, TypographyProps } from './types';
 
 export function Typography({
   size,
-  variant,
   color = 'default',
   tag = 'h6',
-  component,
   disableHashtagsHighlighting = false,
   className,
   children,
   ...rest
 }: TypographyProps) {
-  const TitleComponent = tag || component || 'h6';
+  const TitleComponent = tag  || 'h6';
 
   return (
     <TitleComponent
-      className={cn(titleVariants({ size: size || variant, color, className }))}
+      className={cn(titleVariants({ size: size , color, className }))}
       {...rest}
     >
       {typeof children === 'string' && !disableHashtagsHighlighting
