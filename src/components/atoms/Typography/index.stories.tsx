@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/react';
-
 import { Typography } from '.';
 import { TypographyProps } from './types';
 import { AUTHORS } from '.storybook/authors';

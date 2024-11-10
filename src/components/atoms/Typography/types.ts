@@ -68,16 +68,6 @@ export type TypographyComponentType =
 // - `color`: Optional prop specifying the color scheme of the typography.
 // - `component`: Optional prop specifying the underlying HTML element to render.
 export interface TypographyProps extends HTMLAttributes<HTMLHeadingElement> {
-  /**
-   * @deprecated
-   */
-  variant?: TypographyVariantType;
-
-  /**
-   * @deprecated
-   */
-  component?: TypographyComponentType;
-
   size?: TypographyVariantType;
   color?: TypographyColorsType;
   tag?: TypographyComponentType;
