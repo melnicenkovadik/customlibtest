@@ -1,7 +1,7 @@
 .github
-.husky
+
 .storybook
-dist
+/dist
 node_modules
 **/*.md
 pnpm-lock.yaml
