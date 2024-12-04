@@ -54,7 +54,6 @@ my-component-library/
 │       │   ├── Geist-Regular.ttf
 │       │   └── Geist-Regular.woff2
 │       └── assets/               # Additional media assets
-│           ├── nft.png
 │           ├── avatar.jpg
 │           ├── avatar2.jpg
 │           ├── avatar3.jpg
