@@ -1,6 +1,5 @@
 import { IconButton } from '@/components/atoms/IconButton';
 import { cn } from '@/utils';
-
 import { IconButtonsGroupProps } from './types';
 
 export const IconButtonsGroup = ({

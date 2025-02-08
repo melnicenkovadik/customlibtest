@@ -1,7 +1,6 @@
 import React, { forwardRef } from 'react';
 import { Indicator, Root } from '@radix-ui/react-progress';
 import { cn } from '@/utils';
-
 import { indicatorVariants, ProgressProps, progressVariants } from './types';
 
 export const Progress = forwardRef<

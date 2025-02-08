@@ -1,6 +1,5 @@
 import { Button } from '@/components';
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { Tagline } from '.';
 import { AUTHORS } from '.storybook/authors';
 import { BADGE } from '.storybook/constants';

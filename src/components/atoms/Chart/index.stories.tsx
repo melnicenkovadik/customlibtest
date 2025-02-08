@@ -1,5 +1,4 @@
 import { Meta, type StoryObj } from '@storybook/react';
-
 import { Chart } from '.';
 import { AUTHORS } from '.storybook/authors';
 

@@ -2,7 +2,6 @@ import { ReactNode } from 'react';
 import { Typography } from '@/components/atoms';
 import { TruncateText } from '@/components/atoms/TruncateText';
 import { cn } from '@/utils';
-
 import { TextWithActionsProps } from './types';
 
 export const TextWithActions = ({

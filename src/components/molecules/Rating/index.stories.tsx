@@ -1,7 +1,6 @@
 import { Button, Progress, Typography } from '@/components';
 import type { Meta, StoryObj } from '@storybook/react';
 import { MessageSquare } from 'lucide-react';
-
 import { Rating } from '.';
 import { RatingComponentProps } from './types';
 import { AUTHORS } from '.storybook/authors';

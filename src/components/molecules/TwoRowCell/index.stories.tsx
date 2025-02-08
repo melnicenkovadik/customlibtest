@@ -5,7 +5,6 @@ import { Button } from '@/components/atoms/Button';
 import { cn } from '@/utils';
 import type { Meta, StoryObj } from '@storybook/react';
 import { ChevronsUpDown, EllipsisVertical, Plus, User } from 'lucide-react';
-
 import { TwoRowCell } from '.';
 import { AUTHORS } from '.storybook/authors';
 

@@ -13,7 +13,6 @@ import {
   Title,
   Tooltip,
 } from 'chart.js';
-
 import { IChartProps } from './type';
 
 ChartJS.register(

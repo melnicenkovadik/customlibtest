@@ -5,7 +5,6 @@ import { TooltipProvider } from '@/components/molecules/Tooltip';
 import { cn } from '@/utils';
 import { Meta, StoryObj } from '@storybook/react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-
 import { AUTHORS } from '.storybook/authors';
 import { BADGE } from '.storybook/constants';
 

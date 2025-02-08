@@ -1,7 +1,6 @@
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from 'react';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { cn } from '@/utils';
-
 import { ImageModalContentProps } from './types';
 
 export const ImageModal = DialogPrimitive.Root;

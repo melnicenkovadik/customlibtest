@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { TruncateText } from '.';
 import { AUTHORS } from '.storybook/authors';
 import { BADGE } from '.storybook/constants';

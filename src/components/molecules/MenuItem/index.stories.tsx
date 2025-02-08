@@ -7,7 +7,6 @@ import {
 } from '@/components/molecules/Tooltip';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Mail } from 'lucide-react';
-
 import { MenuItem } from '.';
 import { AUTHORS } from '.storybook/authors';
 

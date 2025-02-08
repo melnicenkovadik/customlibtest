@@ -10,7 +10,6 @@ import { action } from '@storybook/addon-actions';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Eye, Plus } from 'lucide-react';
 import { z } from 'zod';
-
 import { Input } from '.';
 import { InputArgs } from './types';
 import { AUTHORS } from '.storybook/authors';

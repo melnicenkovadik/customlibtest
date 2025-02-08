@@ -3,7 +3,6 @@ import { Badge } from '@/components/atoms/Badge';
 import { Button } from '@/components/atoms/Button';
 import { cn } from '@/utils';
 import { Copy } from 'lucide-react';
-
 import { CopyButtonProps } from './types';
 
 export const CopyButton = ({

@@ -13,7 +13,6 @@ import {
   TriangleAlert,
   X,
 } from 'lucide-react';
-
 import {
   InputProps,
   InputSearchProps,

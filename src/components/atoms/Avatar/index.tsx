@@ -2,7 +2,6 @@ import { ComponentPropsWithoutRef } from 'react';
 import { Fallback, Image, Root } from '@radix-ui/react-avatar';
 import { cn } from '@/utils';
 import { cva } from 'class-variance-authority';
-
 import { AvatarProps } from './types';
 
 const avatarVariants = cva(

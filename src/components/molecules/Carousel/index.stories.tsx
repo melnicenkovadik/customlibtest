@@ -1,6 +1,5 @@
 import { ExpandableImage, ExpandedImage } from '@/components';
 import { Meta, StoryObj } from '@storybook/react';
-
 import {
   Carousel,
   CarouselContent,

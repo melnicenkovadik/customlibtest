@@ -3,7 +3,6 @@ import { PopoverClose } from '@radix-ui/react-popover';
 import { Button, Popover, PopoverContent, PopoverTrigger } from '@/components';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Moon, Palette, Sun, X } from 'lucide-react';
-
 import { ThemeSelector } from '.';
 import { ModeCodeType } from './types';
 import { AUTHORS } from '.storybook/authors';

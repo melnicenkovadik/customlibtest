@@ -19,7 +19,7 @@ This is a reusable component library built with TypeScript, Vite, and Tailwind C
 The project is organized into multiple directories and files, each serving a specific purpose. Below is an overview of the project structure.
 
 ```plaintext
-my-component-library/
+UiHub/
 │
 ├── Root Files
 │   ├── README.md                 # Project documentation

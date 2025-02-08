@@ -1,7 +1,6 @@
 import { components, ControlProps } from 'react-select';
 import { Meta, StoryObj } from '@storybook/react';
 import { Search } from 'lucide-react';
-
 import { Select } from '.';
 import { addresses } from './mock';
 import { AUTHORS } from '.storybook/authors';

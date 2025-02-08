@@ -7,7 +7,6 @@ import {
   Trigger,
 } from '@radix-ui/react-tooltip';
 import { cn } from '@/utils';
-
 import { TooltipProviderProps } from './types';
 
 export const TooltipProvider: React.FC<TooltipProviderProps> = Provider;

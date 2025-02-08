@@ -1,5 +1,4 @@
 import { cn } from '@/utils';
-
 import { MenuItemProps } from './types';
 
 export const MenuItem = ({

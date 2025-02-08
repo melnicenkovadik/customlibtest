@@ -2,7 +2,6 @@ import React, { forwardRef, useId } from 'react';
 import { Indicator, Root } from '@radix-ui/react-checkbox';
 import { cn } from '@/utils';
 import { Square, SquareCheckBig } from 'lucide-react';
-
 import { CheckboxProps } from './types';
 
 export const Checkbox = forwardRef<

@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/react';
-
 import { Separator } from '.';
 import { AUTHORS } from '.storybook/authors';
 

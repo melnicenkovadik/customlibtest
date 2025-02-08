@@ -2,7 +2,6 @@
 import { argv, exit } from 'node:process';
 import chalk from 'chalk';
 import { ESLint } from 'eslint';
-
 import { listChangedFiles } from './listChangedFiles.mjs';
 
 const changedFiles = [...listChangedFiles()];

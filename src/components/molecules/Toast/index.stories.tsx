@@ -2,7 +2,6 @@ import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { Button } from '@/components/atoms';
 import { Meta, StoryObj } from '@storybook/react';
-
 import { Notifications, Toast } from '.';
 import { AUTHORS } from '.storybook/authors';
 

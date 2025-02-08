@@ -1,7 +1,6 @@
 import { CopyButton } from '@/components/atoms/CopyButton';
 import { TextWithActions } from '@/components/molecules/TextWithActions/index';
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { AUTHORS } from '.storybook/authors';
 import { BADGE } from '.storybook/constants';
 

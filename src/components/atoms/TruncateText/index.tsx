@@ -1,5 +1,4 @@
 import { cn, truncateText } from '@/utils';
-
 import { TruncateTextProps, truncateVariants } from './types';
 
 export const TruncateText = ({

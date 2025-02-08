@@ -3,7 +3,6 @@ import { Badge, Button, Separator } from '@/components';
 import { Typography } from '@/components/atoms/Typography';
 import type { Meta, StoryObj } from '@storybook/react';
 import { X } from 'lucide-react';
-
 import {
   Drawer,
   DrawerClose,

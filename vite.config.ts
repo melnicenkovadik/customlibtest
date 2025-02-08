@@ -15,12 +15,6 @@ export default defineConfig({
       entry: path.resolve(__dirname, './src/components/index.ts'), // Путь к файлу index.ts
       name: 'my-component-library', // Имя библиотеки
       fileName: 'my-component-library', // Имя файла
-      // fileName: (format, name) => {
-      //   if (format === 'es') {
-      //     return name + '.js';
-      //   }
-      //   return name + '.' + format;
-      // },
       formats: ['es'],
     },
     rollupOptions: {

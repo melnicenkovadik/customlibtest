@@ -1,7 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Plus } from 'lucide-react';
-
 import { Button } from '.';
 import { AUTHORS } from '.storybook/authors';
 
@@ -112,6 +111,10 @@ export const Variants = {
       <Button
         {...args}
         variant="destructive"
+      />
+      <Button
+        {...args}
+        variant="outline-primary"
       />
       <Button
         {...args}

@@ -7,7 +7,6 @@ import {
 } from 'react';
 import * as TabsPrimitive from '@radix-ui/react-tabs';
 import { cn } from '@/utils';
-
 import {
   TabsProps,
   tabsRootVariants,

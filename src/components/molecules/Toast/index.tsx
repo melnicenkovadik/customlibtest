@@ -5,7 +5,6 @@ import { Button } from '@/components/atoms/Button';
 import { Typography } from '@/components/atoms/Typography';
 import { cn } from '@/utils';
 import { X } from 'lucide-react';
-
 import { ToastProps } from './types';
 
 export const Toast = ({

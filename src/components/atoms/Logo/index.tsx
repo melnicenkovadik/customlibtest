@@ -1,6 +1,5 @@
 import { LogoMain } from '@/assets/logo';
 import { LogoShort } from '@/assets/logoShort';
-
 import { LogoProps } from './types';
 
 export function Logo({ variant = 'default', className }: LogoProps) {

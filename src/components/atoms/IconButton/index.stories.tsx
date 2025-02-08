@@ -1,7 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import { Meta, StoryObj } from '@storybook/react';
 import { Plus } from 'lucide-react';
-
 import { IconButton } from '.';
 import { AUTHORS } from '.storybook/authors';
 
