@@ -1,5 +1,4 @@
 import { cn } from '@/utils';
-
 import { TaglineProps, taglineVariants } from './types';
 
 export function Tagline({

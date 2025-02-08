@@ -1,5 +1,4 @@
 import { cn } from '@/utils';
-
 import { BadgeProps, badgeVariants } from './types';
 
 export const Badge = ({ className, variant, ...props }: BadgeProps) => {

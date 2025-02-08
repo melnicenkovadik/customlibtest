@@ -1,7 +1,6 @@
 import React, { forwardRef } from 'react';
 import { Root, Thumb } from '@radix-ui/react-switch';
 import { cn } from '@/utils';
-
 import { SwitchProps, switchThumbVariant, switchVariants } from './types';
 
 export const Switch = forwardRef<React.ElementRef<typeof Root>, SwitchProps>(

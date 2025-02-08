@@ -4,7 +4,6 @@ import { useDisableAnimations } from '@/hooks/useDisableAnimations';
 import { useMedia } from '@/hooks/useMedia';
 import { cn } from '@/utils';
 import { Drawer as DrawerPrimitive } from 'vaul';
-
 import { DrawerProvider, useDrawerContext } from './DrawerContext';
 
 export const Drawer = ({

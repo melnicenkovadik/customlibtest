@@ -1,6 +1,5 @@
 import { cn } from '@/utils';
 import { highlightHashtags } from '@/utils/helpers';
-
 import { titleVariants, TypographyProps } from './types';
 
 export function Typography({
@@ -12,11 +11,11 @@ export function Typography({
   children,
   ...rest
 }: TypographyProps) {
-  const TitleComponent = tag  || 'h6';
+  const TitleComponent = tag || 'h6';
 
   return (
     <TitleComponent
-      className={cn(titleVariants({ size: size , color, className }))}
+      className={cn(titleVariants({ size: size, color, className }))}
       {...rest}
     >
       {typeof children === 'string' && !disableHashtagsHighlighting

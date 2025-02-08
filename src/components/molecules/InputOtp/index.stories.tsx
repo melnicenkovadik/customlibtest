@@ -1,5 +1,4 @@
 import { Meta, StoryObj } from '@storybook/react';
-
 import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from '.';
 import { AUTHORS } from '.storybook/authors';
 

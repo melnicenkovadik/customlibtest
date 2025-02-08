@@ -6,7 +6,6 @@ import {
 } from '@/components/molecules/ExpandableImage/ImageModal';
 import { cn } from '@/utils';
 import { Expand, Heart, Share2 } from 'lucide-react';
-
 import { ExpandableImageProps } from './types';
 
 export const ExpandableImage = ({

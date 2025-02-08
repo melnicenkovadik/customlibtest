@@ -3,7 +3,6 @@ import { Typography } from '@/components/atoms/Typography';
 import { DialogClose } from '@/components/molecules/Dialog';
 import { cn } from '@/utils';
 import { Share, X } from 'lucide-react';
-
 import { CustomControllerProps, ExpandedImageProps } from './types';
 
 const renderIconButton = (button: CustomControllerProps, index: number) => {

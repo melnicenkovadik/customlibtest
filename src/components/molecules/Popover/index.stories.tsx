@@ -3,7 +3,6 @@ import { Button } from '@/components/atoms/Button';
 import { Label } from '@/components/atoms/Label';
 import { Input } from '@/components/molecules/Input';
 import { Meta, StoryObj } from '@storybook/react';
-
 import { Popover, PopoverContent, PopoverTrigger } from '.';
 import { AUTHORS } from '.storybook/authors';
 import { BADGE } from '.storybook/constants';

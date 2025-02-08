@@ -1,7 +1,6 @@
 import { forwardRef } from 'react';
 import { Button, Typography } from '@/components';
 import { cn } from '@/utils';
-
 import { ThemeSelectorProps } from './types';
 
 export const ThemeSelector = forwardRef<HTMLDivElement, ThemeSelectorProps>(

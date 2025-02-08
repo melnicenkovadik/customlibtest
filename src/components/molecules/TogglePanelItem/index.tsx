@@ -1,6 +1,5 @@
 import { Switch, TruncateText } from '@/components';
 import { cn } from '@/utils';
-
 import { TogglePanelItemProps } from './types';
 
 /** @deprecated

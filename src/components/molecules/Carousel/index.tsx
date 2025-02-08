@@ -3,7 +3,6 @@ import { Button } from '@/components/atoms/Button';
 import { cn } from '@/utils';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-
 import { CarouselApi, CarouselContextProps, CarouselProps } from './types';
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);

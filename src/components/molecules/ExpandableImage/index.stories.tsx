@@ -8,7 +8,6 @@ import {
 import { ImageModal } from '@/components/molecules/ExpandableImage/ImageModal';
 import { ExpandedImage } from '@/components/molecules/ExpandedImage';
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { ExpandableImage } from '.';
 import { AUTHORS } from '.storybook/authors';
 

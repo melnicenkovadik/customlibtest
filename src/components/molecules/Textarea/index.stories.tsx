@@ -1,7 +1,6 @@
 import { action } from '@storybook/addon-actions';
 import type { Meta, StoryObj } from '@storybook/react';
 import { SmilePlus } from 'lucide-react';
-
 import { Textarea } from '.';
 import { TextareaProps } from './types';
 import { AUTHORS } from '.storybook/authors';

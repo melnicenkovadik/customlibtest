@@ -6,7 +6,6 @@ import {
 } from '@/components/atoms';
 import { Typography } from '@/components/atoms/Typography';
 import { Meta, StoryObj } from '@storybook/react';
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '.';
 import { AUTHORS } from '.storybook/authors';
 

@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { Progress } from '.';
 import { AUTHORS } from '.storybook/authors';
 

@@ -10,7 +10,6 @@ import { Label } from '@/components/atoms/Label';
 import { SelectItem } from '@/components/molecules/SelectItem';
 import { cn } from '@/utils';
 import { ChevronDown, Search, X } from 'lucide-react';
-
 import { getSelectClassNames, selectVariants } from './styles';
 import { CustomOptionType, SelectProps } from './types';
 

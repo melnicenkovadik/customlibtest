@@ -1,7 +1,6 @@
 import { cn } from '@/utils';
 import type { Meta, StoryObj } from '@storybook/react';
 import { User } from 'lucide-react';
-
 import { Badge } from '.';
 import { AUTHORS } from '.storybook/authors';
 

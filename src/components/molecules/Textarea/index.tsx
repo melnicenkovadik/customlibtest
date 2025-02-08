@@ -2,7 +2,6 @@ import { forwardRef, useId } from 'react';
 import { Label } from '@radix-ui/react-label';
 import { cn } from '@/utils';
 import { TriangleAlert } from 'lucide-react';
-
 import { TextareaProps, textAreaVariants } from './types';
 
 export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(

@@ -1,7 +1,6 @@
 import { TogglePanelItem } from '@/components/molecules/TogglePanelItem/index';
 import type { Meta, StoryObj } from '@storybook/react';
 import { BellRing } from 'lucide-react';
-
 import { AUTHORS } from '.storybook/authors';
 
 const item = {

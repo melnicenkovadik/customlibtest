@@ -1,7 +1,6 @@
 import { forwardRef } from 'react';
 import { Typography } from '@/components/atoms/Typography';
 import { cn } from '@/utils';
-
 import { IconButtonProps, iconButtonVariants } from './types';
 
 const Button = forwardRef<HTMLButtonElement, IconButtonProps>(

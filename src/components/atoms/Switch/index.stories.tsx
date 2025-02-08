@@ -1,7 +1,6 @@
 import { Controller, useForm } from 'react-hook-form';
 import { Label } from '@/components/atoms/Label';
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { Switch } from '.';
 import { AUTHORS } from '.storybook/authors';
 

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Pen, Trash, UserRound } from 'lucide-react';
-
 import { IconButtonsGroup } from '.';
 import { AUTHORS } from '.storybook/authors';
 import { BADGE } from '.storybook/constants';

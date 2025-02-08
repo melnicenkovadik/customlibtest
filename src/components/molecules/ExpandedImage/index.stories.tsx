@@ -1,6 +1,5 @@
 import { ImageModal } from '@/components/molecules/ExpandableImage/ImageModal';
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { ExpandedImage } from '.';
 import { AUTHORS } from '.storybook/authors';
 

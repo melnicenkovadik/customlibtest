@@ -15,7 +15,6 @@ import {
   ChevronsRight,
   MoreHorizontal,
 } from 'lucide-react';
-
 import { PaginationProps } from './types';
 
 export const PaginationWrapper = ({

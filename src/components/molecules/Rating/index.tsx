@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
 import { cn } from '@/utils';
 import { Star } from 'lucide-react';
-
 import { RatingComponentProps, ratingVariants } from './types';
 
 const RatingStar = ({
